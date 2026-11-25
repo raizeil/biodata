@@ -13,19 +13,6 @@ const dataBiodata = {
   telepon: '+62 813-7801-5819',
   bioSingkat:
     'Halo! Saya seorang yang ingin mencoba semuanyaa...',
-  
-  infoPribadi: [
-    { label: 'Nama Lengkap', value: 'Fidelis Davin Wiradhyaksa', icon: '👤' },
-    { label: 'Nama Panggilan', value: 'Davin', icon: '🏷️' },
-    { label: 'Tempat, Tanggal Lahir', value: 'Jambi, 27 April 2008', icon: '🎂' },
-    { label: 'Usia', value: '18 Tahun', icon: '⏳' },
-    { label: 'Jenis Kelamin', value: 'Laki-Laki', icon: '🚹' },
-    { label: 'Agama', value: 'Katolik', icon: '🕊️' },
-    { label: 'Kewarganegaraan', value: 'Indonesia (Ya Tuhan.. WNI)', icon: '🇮🇩' },
-    { label: 'Status Saat Ini', value: 'Mahasiswa / Pelajar', icon: '🎓' },
-    { label: 'Domisili', value: 'Yogyakarta, Indonesia', icon: '📍' },
-    { label: 'Bahasa', value: 'Bahasa Indonesia, English (Pasif)', icon: '🗣️' },
-  ],
 
   keahlianTeknis: [
     { nama: 'HTML5 & CSS3', level: 50, keterangan: 'Flexbox, Grid, Animasi CSS' },
@@ -79,7 +66,7 @@ const dataBiodata = {
     },
     {
       judul: 'Aplikasi Perpustakaan Online [GUYPRON]',
-      deskripsi: 'Aplikasi pengatur jadwal tugas dengan fitur simpan ke local storage dan penanda tugas selesai.',
+      deskripsi: 'Aplikasi pengatur buku online dan pinjaman online sebagai permudah dalam pencatatan peminjaman di perpustakaan.',
       tag: ['React', 'LocalStorage', 'UI/UX'],
       tautan: '#',
     },
