@@ -7,7 +7,7 @@ const dataBiodata = {
   namaLengkap: 'Fidelis Davin Wiradhyaksa',
   namaPanggilan: 'Davin',
   profesi: 'Mahasiswa USD',
-  status: 'Tersedia untuk Magang / Proyek Freelance',
+  status: 'Tersedia untuk Himpunan Informatika (kayaknya)',
   lokasi: 'Yogyakarta, Indonesia',
   email: 'fid.davin27@gmail.com',
   telepon: '+62 813-7801-5819',
@@ -27,8 +27,7 @@ const dataBiodata = {
     'Kerja Sama Tim',
     'Kemampuan Problem Solving',
     'Cepat Beradaptasi',
-    'Manajemen Waktu',
-    'Kemauan Belajar Tinggi',
+    'Kemauan Belajar',
   ],
 
   pendidikan: [
@@ -44,7 +43,7 @@ const dataBiodata = {
       institusi: 'SMA Pangudi Luhur Yogyakarta',
       jurusan: 'IPA',
       periode: '2024 - 2026',
-      deskripsi: 'Aktif di klub coding sekolah, mempelajari dasar web development',
+      deskripsi: 'Aktif mempelajari dasar web development',
     },
   ],
 
@@ -79,6 +78,15 @@ const dataBiodata = {
     { icon: '📚', nama: 'Membaca Berita Terkini' },
     { icon: '☕', nama: 'Menikmati Kopi & Nongkrong' },
     { icon: '📷', nama: 'Fotografi Ponsel' },
+  ],
+
+  infoPribadi: [
+    { icon: '👤', label: 'Nama Lengkap', value: 'Fidelis Davin Wiradhyaksa' },
+    { icon: '😊', label: 'Nama Panggilan', value: 'Davin' },
+    { icon: '🎓', label: 'Profesi / Status', value: 'Mahasiswa USD' },
+    { icon: '📍', label: 'Lokasi', value: 'Yogyakarta, Indonesia' },
+    { icon: '📧', label: 'Email', value: 'fid.davin27@gmail.com' },
+    { icon: '📱', label: 'Telepon', value: '+62 813-7801-5819' },
   ],
 
   kontakSosial: [
@@ -238,12 +246,6 @@ function App() {
           🌟 Semua
         </button>
         <button
-          className={`tab-btn ${activeTab === 'pribadi' ? 'active' : ''}`}
-          onClick={() => setActiveTab('pribadi')}
-        >
-          👤 Data Pribadi
-        </button>
-        <button
           className={`tab-btn ${activeTab === 'keahlian' ? 'active' : ''}`}
           onClick={() => setActiveTab('keahlian')}
         >
@@ -270,27 +272,6 @@ function App() {
       </nav>
 
       <main className="main-content" key={activeTab}>
-        {(activeTab === 'semua' || activeTab === 'pribadi') && (
-          <section className="section-card">
-            <div className="section-header">
-              <h2>👤 Biodata Pribadi</h2>
-              <p>Rincian data diri dan informasi dasar</p>
-            </div>
-
-            <div className="info-grid">
-              {dataBiodata.infoPribadi.map((item, idx) => (
-                <div key={idx} className="info-item">
-                  <div className="info-icon">{item.icon}</div>
-                  <div className="info-detail">
-                    <span className="info-label">{item.label}</span>
-                    <strong className="info-value">{item.value}</strong>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
         {(activeTab === 'semua' || activeTab === 'keahlian') && (
           <section className="section-card">
             <div className="section-header">
