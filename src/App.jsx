@@ -13,19 +13,6 @@ const dataBiodata = {
   telepon: '+62 813-7801-5819',
   bioSingkat:
     'Halo! Saya seorang yang ingin mencoba semuanyaa...',
-  
-  infoPribadi: [
-    { label: 'Nama Lengkap', value: 'Fidelis Davin Wiradhyaksa', icon: '👤' },
-    { label: 'Nama Panggilan', value: 'Davin', icon: '🏷️' },
-    { label: 'Tempat, Tanggal Lahir', value: 'Jambi, 27 April 2008', icon: '🎂' },
-    { label: 'Usia', value: '18 Tahun', icon: '⏳' },
-    { label: 'Jenis Kelamin', value: 'Laki-Laki', icon: '🚹' },
-    { label: 'Agama', value: 'Katolik', icon: '🕊️' },
-    { label: 'Kewarganegaraan', value: 'Indonesia (Ya Tuhan.. WNI)', icon: '🇮🇩' },
-    { label: 'Status Saat Ini', value: 'Mahasiswa / Pelajar', icon: '🎓' },
-    { label: 'Domisili', value: 'Yogyakarta, Indonesia', icon: '📍' },
-    { label: 'Bahasa', value: 'Bahasa Indonesia, English (Pasif)', icon: '🗣️' },
-  ],
 
   keahlianTeknis: [
     { nama: 'HTML5 & CSS3', level: 50, keterangan: 'Flexbox, Grid, Animasi CSS' },
@@ -40,8 +27,7 @@ const dataBiodata = {
     'Kerja Sama Tim',
     'Kemampuan Problem Solving',
     'Cepat Beradaptasi',
-    'Manajemen Waktu',
-    'Kemauan Belajar Tinggi',
+    'Kemauan Belajar',
   ],
 
   pendidikan: [
@@ -57,7 +43,7 @@ const dataBiodata = {
       institusi: 'SMA Pangudi Luhur Yogyakarta',
       jurusan: 'IPA',
       periode: '2024 - 2026',
-      deskripsi: 'Aktif di klub coding sekolah, mempelajari dasar web development',
+      deskripsi: 'Aktif mempelajari dasar web development',
     },
   ],
 
@@ -79,7 +65,7 @@ const dataBiodata = {
     },
     {
       judul: 'Aplikasi Perpustakaan Online [GUYPRON]',
-      deskripsi: 'Aplikasi pengatur jadwal tugas dengan fitur simpan ke local storage dan penanda tugas selesai.',
+      deskripsi: 'Aplikasi pengatur buku online dan pinjaman online sebagai permudah dalam pencatatan peminjaman di perpustakaan.',
       tag: ['React', 'LocalStorage', 'UI/UX'],
       tautan: '#',
     },
@@ -251,12 +237,6 @@ function App() {
           🌟 Semua
         </button>
         <button
-          className={`tab-btn ${activeTab === 'pribadi' ? 'active' : ''}`}
-          onClick={() => setActiveTab('pribadi')}
-        >
-          👤 Data Pribadi
-        </button>
-        <button
           className={`tab-btn ${activeTab === 'keahlian' ? 'active' : ''}`}
           onClick={() => setActiveTab('keahlian')}
         >
@@ -283,27 +263,6 @@ function App() {
       </nav>
 
       <main className="main-content" key={activeTab}>
-        {(activeTab === 'semua' || activeTab === 'pribadi') && (
-          <section className="section-card">
-            <div className="section-header">
-              <h2>👤 Biodata Pribadi</h2>
-              <p>Rincian data diri dan informasi dasar</p>
-            </div>
-
-            <div className="info-grid">
-              {dataBiodata.infoPribadi.map((item, idx) => (
-                <div key={idx} className="info-item">
-                  <div className="info-icon">{item.icon}</div>
-                  <div className="info-detail">
-                    <span className="info-label">{item.label}</span>
-                    <strong className="info-value">{item.value}</strong>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
         {(activeTab === 'semua' || activeTab === 'keahlian') && (
           <section className="section-card">
             <div className="section-header">
