@@ -7,7 +7,7 @@ const dataBiodata = {
   namaLengkap: 'Fidelis Davin Wiradhyaksa',
   namaPanggilan: 'Davin',
   profesi: 'Mahasiswa USD',
-  status: 'Tersedia untuk Magang / Proyek Freelance',
+  status: 'Tersedia untuk Himpunan Informatika (kayaknya)',
   lokasi: 'Yogyakarta, Indonesia',
   email: 'fid.davin27@gmail.com',
   telepon: '+62 813-7801-5819',
@@ -78,6 +78,15 @@ const dataBiodata = {
     { icon: '📚', nama: 'Membaca Berita Terkini' },
     { icon: '☕', nama: 'Menikmati Kopi & Nongkrong' },
     { icon: '📷', nama: 'Fotografi Ponsel' },
+  ],
+
+  infoPribadi: [
+    { icon: '👤', label: 'Nama Lengkap', value: 'Fidelis Davin Wiradhyaksa' },
+    { icon: '😊', label: 'Nama Panggilan', value: 'Davin' },
+    { icon: '🎓', label: 'Profesi / Status', value: 'Mahasiswa USD' },
+    { icon: '📍', label: 'Lokasi', value: 'Yogyakarta, Indonesia' },
+    { icon: '📧', label: 'Email', value: 'fid.davin27@gmail.com' },
+    { icon: '📱', label: 'Telepon', value: '+62 813-7801-5819' },
   ],
 
   kontakSosial: [
